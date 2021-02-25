@@ -20,7 +20,7 @@ const Configuration = {
             layerOptions: {
                 style: planningappsStyle,
                 onEachFeature: planningappsPopup,
-                maxZoom: 2
+                maxZoom: 18
             },
             displayOverlay: true,
             visibleByDefault: false
@@ -32,7 +32,7 @@ const Configuration = {
             layerOptions: {
                 style: buildingregsapprovalStyle,
                 onEachFeature: buildingregsapprovalPopup,
-                maxZoom: 2
+                maxZoom: 18
             },
             displayOverlay: true,
             visibleByDefault: false
@@ -44,7 +44,7 @@ const Configuration = {
             layerOptions: {
                 style: buildingcertStyle,
                 onEachFeature: buildingcertPopup,
-                maxZoom: 2
+                maxZoom: 18
             },
             displayOverlay: true,
             visibleByDefault: false
