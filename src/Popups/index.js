@@ -16,7 +16,7 @@ const planningappsPopup = (feature, layer) => {
 
  const buildingregsapprovalPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q1.1 - Building Regulations Approval</p>
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q1.1 - Building Regulations Approval</p>
   <p></p>
   <p class="info">Application No.: ${feature.properties.refval}</p>
   <p class="info">Address: ${feature.properties.address}</p>
@@ -32,7 +32,7 @@ const planningappsPopup = (feature, layer) => {
 
  const buildingcertPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q1.1 - Building Certificates</p>
+  const content = `<div class="item"><i class="fa fa-certificate" aria-hidden="true"></i><p class="title">Q1.1 - Building Certificates</p>
   <p></p>
   <p class="info">Application No.: ${feature.properties.refval}</p>
   <p class="info">Address: ${feature.properties.address}</p>
