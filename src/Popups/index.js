@@ -106,7 +106,7 @@ const airport_public_safety_zonePopup = (feature, layer) => {
 
  const prowPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-map-signs" aria-hidden="true"></i><p class="title">Q1.2 - Definitive Rights of Way</p>
+  const content = `<div class="item"><i class="fa fa-map-signs" aria-hidden="true"></i><p class="title">Q2.2 - Definitive Rights of Way</p>
   <p></p>
   <p class="info">PROW Number: ${feature.properties.row}</p>
   <p class="info">Type: ${feature.properties.type}</p>
@@ -447,6 +447,43 @@ const towncentreareasPopup = (feature, layer) => {
   layer.bindPopup(content)
   }
 
+const adopted_highwaysPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q2.1 - Adopted Highways</p>
+  <p></p>
+  <p class="info">USRN: ${feature.properties.usrn}</p>
+  <p class="info">Street: ${feature.properties.street}</p>
+                               
+  </div>`
+                                 
+  layer.bindPopup(content)
+  }
+
+const section38Popup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q2.1 - Section 38 Agreements</p>
+  <p></p>
+  <p class="info">Description: ${feature.properties.description}</p>
+  <p class="info">Ref: ${feature.tlc_ref}</p>
+  <p class="info">Registered Date: ${feature.properties.date_registered}</p>
+                               
+  </div>`
+                                
+  layer.bindPopup(content)
+  }  
+
+const privatestreetworksPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q2.1 - Private Streetworks</p>
+  <p></p>
+  <p class="info">USRN: ${feature.properties.usrn}</p>
+  <p class="info">Street: ${feature.thorofare}</p>
+                                 
+  </div>`
+                                  
+  layer.bindPopup(content)
+  } 
+
 export {
   planningappsPopup,
   buildingregsapprovalPopup, 
@@ -483,5 +520,8 @@ export {
   sssiPopup,
   strategicopenspacePopup,
   strategicrecreationroutesPopup,
-  towncentreareasPopup
+  towncentreareasPopup,
+  adopted_highwaysPopup, 
+  section38Popup, 
+  privatestreetworksPopup
 }

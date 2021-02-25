@@ -300,6 +300,30 @@ const towncentreareasStyle = {
     fillOpacity: 0.25,
 }
 
+const adopted_highwaysStyle = {
+    color: '#ce1256',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#ce1256',
+    fillOpacity: 0.25,
+}
+
+const section38Style = {
+    color: '#fed976',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#fed976',
+    fillOpacity: 0.25,
+}
+
+const privatestreetworksStyle = {
+    color: '#fd8d3c',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#fd8d3c',
+    fillOpacity: 0.25,
+}
+
 export {
         planningappsStyle,
         buildingregsapprovalStyle, 
@@ -336,5 +360,8 @@ export {
         sssiStyle,
         strategicopenspaceStyle,
         strategicrecreationroutesStyle,
-        towncentreareasStyle
+        towncentreareasStyle, 
+        adopted_highwaysStyle,
+        section38Style,
+        privatestreetworksStyle
     }
