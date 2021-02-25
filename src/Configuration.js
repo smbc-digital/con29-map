@@ -23,7 +23,7 @@ const Configuration = {
                 maxZoom: 2
             },
             displayOverlay: true,
-            visibleByDefault: true
+            visibleByDefault: false
         },
 
         {
@@ -35,7 +35,7 @@ const Configuration = {
                 maxZoom: 2
             },
             displayOverlay: true,
-            visibleByDefault: true
+            visibleByDefault: false
         },
 
         {
@@ -47,7 +47,7 @@ const Configuration = {
                 maxZoom: 2
             },
             displayOverlay: true,
-            visibleByDefault: true
+            visibleByDefault: false
         },
         
         {
