@@ -1,3 +1,27 @@
+const planningappsStyle = {
+    color: '#e31a1c',
+    weight: 4,
+    opacity: 1,
+    fillColor: '#e31a1c',
+    fillOpacity: 0.25
+}
+
+const buildingregsapprovalStyle = {
+    color: '#08519c',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#2171b5',
+    fillOpacity: 0.25
+}
+
+const buildingcertStyle = {
+    color: '#7bccc4',
+    weight: 4,
+    opacity: 1,
+    fillColor: '#a8ddb5',
+    fillOpacity: 0.25
+}
+
 const airport_public_safety_zoneStyle = {
     color: '#000',
     weight: 2,
@@ -277,6 +301,9 @@ const towncentreareasStyle = {
 }
 
 export {
+        planningappsStyle,
+        buildingregsapprovalStyle, 
+        buildingcertStyle,
         airport_public_safety_zoneStyle,
         ancientmonumentStyle,
         conservationareaStyle,

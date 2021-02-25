@@ -1,3 +1,50 @@
+const planningappsPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q1.1 - Planning Applications</p>
+  <p></p>
+  <p class="info">Planning Application No.: ${feature.properties.refval}</p>
+  <p class="info">Address: ${feature.properties.address}</p>
+  <p class="info">App Type: ${feature.properties.application_type}</p>
+  <p class="info">Proposal: ${feature.properties.proposal}</p>
+  <p class="info">Decision: ${feature.properties.decision}</p>
+  <p class="info">Decision Date: ${feature.properties.decision_date}</p>
+  
+  </div>`
+ 
+  layer.bindPopup(content)
+ }
+
+ const buildingregsapprovalPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q1.1 - Building Regulations Approval</p>
+  <p></p>
+  <p class="info">Application No.: ${feature.properties.refval}</p>
+  <p class="info">Address: ${feature.properties.address}</p>
+  <p class="info">App Type: ${feature.properties.apptyp}</p>
+  <p class="info">Description: ${feature.properties.dscrpn}</p>
+  <p class="info">Decision: ${feature.properties.bcstat}</p>
+  <p class="info">Decision Date: ${feature.properties.date_modified}</p>
+  
+  </div>`
+ 
+  layer.bindPopup(content)
+ }
+
+ const buildingcertPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q1.1 - Building Certificates</p>
+  <p></p>
+  <p class="info">Application No.: ${feature.properties.refval}</p>
+  <p class="info">Address: ${feature.properties.address}</p>
+  <p class="info">Completion Date: ${feature.properties.date_modified}</p>
+  <p class="info">Description: ${feature.properties.dscrpn}</p>
+  <p class="info">Application Type: ${feature.properties.apptyp}</p>
+  
+  </div>`
+ 
+  layer.bindPopup(content)
+ }
+
 const airport_public_safety_zonePopup = (feature, layer) => {
   
   const content = `<div class="item"><i class="fa fa-plane" aria-hidden="true"></i><p class="title">Q1.2 - Airport Public Safety Zone</p>
@@ -401,6 +448,9 @@ const towncentreareasPopup = (feature, layer) => {
   }
 
 export {
+  planningappsPopup,
+  buildingregsapprovalPopup, 
+  buildingcertPopup,
   airport_public_safety_zonePopup,
   ancientmonumentPopup,
   conservationareaPopup,
