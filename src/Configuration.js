@@ -5,7 +5,7 @@ import { planningappsPopup, buildingregsapprovalPopup, buildingcertPopup, airpor
 const Configuration = {
     Map: {
         StartingLatLng: [53.3915, -2.125143],
-        StartingZoom: 20,
+        StartingZoom: 2,
         FullscreenControl: true,
         DisplayLayerControls: true,
         DisplayGrayScale: true,
