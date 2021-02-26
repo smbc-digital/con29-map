@@ -324,6 +324,46 @@ const privatestreetworksStyle = {
     fillOpacity: 0.25,
 }
 
+const trunk200Style = {
+    color: '#7a0177',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#ae017e',
+    fillOpacity: 0.25,
+}
+
+const roadalterationsStyle = {
+    color: '#238443',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#41ab5d',
+    fillOpacity: 0.25,
+}
+
+const newroadStyle = {
+    color: '#08306b',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#08519c',
+    fillOpacity: 0.25,
+}
+
+const newroadconsultStyle = {
+    color: '#4eb3d3',
+    weight: 6,
+    opacity: 1,
+    fillColor: '#7bccc4',
+    fillOpacity: 0.25,
+}
+
+const newrailwayStyle = {
+    color: '#41b6c4',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#edf8b1',
+    fillOpacity: 0.25,
+}
+
 export {
         planningappsStyle,
         buildingregsapprovalStyle, 
@@ -363,5 +403,10 @@ export {
         towncentreareasStyle, 
         adopted_highwaysStyle,
         section38Style,
-        privatestreetworksStyle
+        privatestreetworksStyle,
+        trunk200Style,
+        roadalterationsStyle,
+        newroadStyle,
+        newroadconsultStyle,
+        newrailwayStyle
     }

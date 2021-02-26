@@ -449,7 +449,7 @@ const towncentreareasPopup = (feature, layer) => {
 
 const adopted_highwaysPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q2.1 - Adopted Highways</p>
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q2.1 - Adopted Highways</p>
   <p></p>
   <p class="info">USRN: ${feature.properties.usrn}</p>
   <p class="info">Street: ${feature.properties.street}</p>
@@ -461,7 +461,7 @@ const adopted_highwaysPopup = (feature, layer) => {
 
 const section38Popup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q2.1 - Section 38 Agreements</p>
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q2.1 - Section 38 Agreements</p>
   <p></p>
   <p class="info">Description: ${feature.properties.description}</p>
   <p class="info">Ref: ${feature.tlc_ref}</p>
@@ -474,7 +474,7 @@ const section38Popup = (feature, layer) => {
 
 const privatestreetworksPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-building" aria-hidden="true"></i><p class="title">Q2.1 - Private Streetworks</p>
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q2.1 - Private Streetworks</p>
   <p></p>
   <p class="info">USRN: ${feature.properties.usrn}</p>
   <p class="info">Street: ${feature.thorofare}</p>
@@ -482,7 +482,68 @@ const privatestreetworksPopup = (feature, layer) => {
   </div>`
                                   
   layer.bindPopup(content)
-  } 
+  }
+  
+const trunk200Popup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.4 - Trunk Road 200m Buffer</p>
+  <p></p>
+  <p class="info">Scheme Name: ${feature.properties.scheme_type}</p>
+  <p class="info">Scheme Description: ${feature.properties.short_description}</p>
+                                   
+  </div>`
+                                    
+  layer.bindPopup(content)
+  }
+  
+const roadalterationsPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.4 - Road Alterations</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.scheme_type}</p>
+  <p class="info">Details: ${feature.properties.short_description}</p>
+  <p class="info">Date for Completion: ${feature.properties.date_for_completion}</p>
+  <p class="info">Reference: ${feature.properties.unique_reference}</p>
+                                     
+  </div>`
+                                      
+  layer.bindPopup(content)
+  }
+
+const newroadPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.4 - New Road Construction</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.scheme_type}</p>
+  <p class="info">Details: ${feature.properties.short_description}</p>
+                                       
+  </div>`
+                                        
+  layer.bindPopup(content)
+  }
+
+const newroadconsultPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.4 - Proposed New Road Consultation</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.scheme_type}</p>
+  <p class="info">Short Description: ${feature.properties.short_description}</p>
+                                         
+  </div>`
+                                          
+  layer.bindPopup(content)
+  }
+
+const newrailwayPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.5 - Proposed Rail Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.scheme}</p>
+                                           
+  </div>`
+                                            
+  layer.bindPopup(content)
+  }
 
 export {
   planningappsPopup,
@@ -523,5 +584,10 @@ export {
   towncentreareasPopup,
   adopted_highwaysPopup, 
   section38Popup, 
-  privatestreetworksPopup
+  privatestreetworksPopup,
+  trunk200Popup,
+  roadalterationsPopup,
+  newroadPopup,
+  newroadconsultPopup,
+  newrailwayPopup
 }
