@@ -652,7 +652,75 @@ const cycletrackPopup = (feature, layer) => {
   layer.bindPopup(content)
   }
 
-  export {
+const stopnoticePopup = (feature, layer) => {
+ 
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.9 - Stop Notice</p>
+  <p></p>
+  <p class="info">Case Ref: ${feature.properties.casefulref}</p>
+                                                               
+  </div>`
+                                                                  
+  layer.bindPopup(content)
+  }
+
+const listbuildingenfPopup = (feature, layer) => {
+ 
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.9 - Listed Building Enforcement Notice</p>
+  <p></p>
+  <p class="info">Case Ref: ${feature.properties.casefulref}</p>
+                                                                 
+  </div>`
+                                                                    
+  layer.bindPopup(content)
+  }
+
+const breachconditionPopup = (feature, layer) => {
+
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.9 - Breach of Condition Notice</p>
+  <p></p>
+  <p class="info">Case Ref: ${feature.properties.casefulref}</p>
+                                                                 
+  </div>`
+                                                                      
+  layer.bindPopup(content)
+  }
+
+const planningcontraPopup = (feature, layer) => {
+
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.9 - Planning Contravention Notice</p>
+  <p></p>
+  <p class="info">Case Ref: ${feature.properties.casefulref}</p>
+                                                                 
+  </div>`
+                                                                        
+  layer.bindPopup(content)
+  }
+
+const othernoticePopup = (feature, layer) => {
+
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.9 - Other Notice</p>
+  <p></p>
+  <p class="info">Case Ref: ${feature.properties.casefulref}</p>
+                                                                   
+  </div>`
+                                                                          
+  layer.bindPopup(content)
+  }
+
+const tpoPopup = (feature, layer) => {
+
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.9 - Tree Preservation Orders</p>
+  <p></p>
+  <p class="info">Status: ${feature.properties.status}</p>
+  <p class="info">Address: ${feature.properties.tpo_name}</p>
+  <p class="info">TPO Ref: ${feature.properties.tpo_number} ${feature.properties.tree_number}</p>
+                                                                     
+  </div>`
+                                                                            
+  layer.bindPopup(content)
+  }
+
+export {
   planningappsPopup,
   buildingregsapprovalPopup, 
   buildingcertPopup,
@@ -706,5 +774,11 @@ const cycletrackPopup = (feature, layer) => {
   residentsparkingPopup,
   minorroadalterationsPopup,
   //pedestriancrossingPopup,
-  cycletrackPopup
+  cycletrackPopup,
+  stopnoticePopup,
+  listbuildingenfPopup,
+  breachconditionPopup,
+  planningcontraPopup,
+  othernoticePopup,
+  tpoPopup
 }

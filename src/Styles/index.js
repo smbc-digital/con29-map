@@ -453,6 +453,54 @@ const cycletrackStyle = {
     fillOpacity: 0.25,
 }
 
+const stopnoticeStyle = {
+    color: '#00441b',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#006d2c',
+    fillOpacity: 0.25,
+}
+
+const listbuildingenfStyle = {
+    color: '#6a51a3',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#807dba',
+    fillOpacity: 0.25,
+}
+
+const breachconditionStyle = {
+    color: '#7f2704',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#a63603',
+    fillOpacity: 0.25,
+}
+
+const planningcontraStyle = {
+    color: '#081d58',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#253494',
+    fillOpacity: 0.25,
+}
+
+const othernoticeStyle = {
+    color: '#252525',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#3f007d',
+    fillOpacity: 0.25,
+}
+
+const tpoStyle = {
+    color: '#78c679',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#addd8e',
+    fillOpacity: 0.25,
+}
+
 export {
         planningappsStyle,
         buildingregsapprovalStyle, 
@@ -508,5 +556,11 @@ export {
         residentsparkingStyle,
         minorroadalterationsStyle,
         //pedestriancrossingStyle
-        cycletrackStyle
+        cycletrackStyle,
+        stopnoticeStyle,
+        listbuildingenfStyle,
+        breachconditionStyle,
+        planningcontraStyle,
+        othernoticeStyle,
+        tpoStyle
     }
