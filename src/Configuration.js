@@ -1,6 +1,6 @@
 //import Leaflet from 'leaflet'
-import { planningappsStyle, buildingregsapprovalStyle, buildingcertStyle, airport_public_safety_zoneStyle, ancientmonumentStyle, conservationareaStyle, employmentareasStyle, employmentproposedStyle, prowStyle, floodzonesStyle, greenbeltStyle, greenbeltmedsStyle, generalStyle, greenchainStyle, gravel_aosStyle, housingsitesStyle, landscapecharacterareaStyle, localnaturereserveStyle, localopenspaceStyle, localwildlifesitesStyle, metrolinkcorridorStyle, m60gatewaysitesStyle, parkgardenofhistoricinterestStyle, pgasStyle, predominantlyresidentialStyle, reliefroadcorridorStyle, sandaosStyle, sandgritaosStyle, shopfrontagesStyle, shoppingtcStyle, shoppingareasStyle, sbiStyle, sssiStyle, strategicopenspaceStyle, strategicrecreationroutesStyle, towncentreareasStyle, adopted_highwaysStyle, section38Style, privatestreetworksStyle, trunk200Style, roadalterationsStyle, newroadStyle, newroadconsultStyle, newrailwayStyle} from './Styles'
-import { planningappsPopup, buildingregsapprovalPopup, buildingcertPopup, airport_public_safety_zonePopup, ancientmonumentPopup, conservationareaPopup, employmentareasPopup, employmentproposedPopup, prowPopup, floodzonesPopup, greenbeltPopup, greenbeltmedsPopup, generalPopup, greenchainPopup, gravel_aosPopup, housingsitesPopup, landscapecharacterareaPopup, localnaturereservePopup, localopenspacePopup, localwildlifesitesPopup, metrolinkcorridorPopup, m60gatewaysitesPopup, parkgardenofhistoricinterestPopup, pgasPopup, predominantlyresidentialPopup, reliefroadcorridorPopup, sandaosPopup, sandgritaosPopup, shopfrontagesPopup, shoppingtcPopup, shoppingareasPopup, sbiPopup, sssiPopup, strategicopenspacePopup, strategicrecreationroutesPopup, towncentreareasPopup, adopted_highwaysPopup, section38Popup, privatestreetworksPopup, trunk200Popup, roadalterationsPopup, newroadPopup, newroadconsultPopup, newrailwayPopup} from './Popups'
+import { planningappsStyle, buildingregsapprovalStyle, buildingcertStyle, airport_public_safety_zoneStyle, ancientmonumentStyle, conservationareaStyle, employmentareasStyle, employmentproposedStyle, prowStyle, floodzonesStyle, greenbeltStyle, greenbeltmedsStyle, generalStyle, greenchainStyle, gravel_aosStyle, housingsitesStyle, landscapecharacterareaStyle, localnaturereserveStyle, localopenspaceStyle, localwildlifesitesStyle, metrolinkcorridorStyle, m60gatewaysitesStyle, parkgardenofhistoricinterestStyle, pgasStyle, predominantlyresidentialStyle, reliefroadcorridorStyle, sandaosStyle, sandgritaosStyle, shopfrontagesStyle, shoppingtcStyle, shoppingareasStyle, sbiStyle, sssiStyle, strategicopenspaceStyle, strategicrecreationroutesStyle, towncentreareasStyle, adopted_highwaysStyle, section38Style, privatestreetworksStyle, trunk200Style, roadalterationsStyle, newroadStyle, newroadconsultStyle, newrailwayStyle, waitingStyle, onewayStyle, prohibitionofdrivingStyle, pedestrianisationStyle, widthweightStyle, trafficcalmingStyle, residentsparkingStyle, minorroadalterationsStyle, cycletrackStyle } from './Styles'
+import { planningappsPopup, buildingregsapprovalPopup, buildingcertPopup, airport_public_safety_zonePopup, ancientmonumentPopup, conservationareaPopup, employmentareasPopup, employmentproposedPopup, prowPopup, floodzonesPopup, greenbeltPopup, greenbeltmedsPopup, generalPopup, greenchainPopup, gravel_aosPopup, housingsitesPopup, landscapecharacterareaPopup, localnaturereservePopup, localopenspacePopup, localwildlifesitesPopup, metrolinkcorridorPopup, m60gatewaysitesPopup, parkgardenofhistoricinterestPopup, pgasPopup, predominantlyresidentialPopup, reliefroadcorridorPopup, sandaosPopup, sandgritaosPopup, shopfrontagesPopup, shoppingtcPopup, shoppingareasPopup, sbiPopup, sssiPopup, strategicopenspacePopup, strategicrecreationroutesPopup, towncentreareasPopup, adopted_highwaysPopup, section38Popup, privatestreetworksPopup, trunk200Popup, roadalterationsPopup, newroadPopup, newroadconsultPopup, newrailwayPopup, waitingPopup, onewayPopup, prohibitionofdrivingPopup, pedestrianisationPopup, widthweightPopup, trafficcalmingPopup, residentsparkingPopup, minorroadalterationsPopup, cycletrackPopup } from './Popups'
 
 const Configuration = {
     Map: {
@@ -546,9 +546,117 @@ const Configuration = {
             key: 'Q3.5 - Proposed Railway Scheme Buffered',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_5&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 2,
+                maxZoom: 20,
                 style: newrailwayStyle,
                 onEachFeature: newrailwayPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+
+        {
+            key: 'Q3.6 - Waiting or Loading Restrictions 200m Buffer',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6b&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: waitingStyle,
+                onEachFeature: waitingPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+        
+        {
+            key: 'Q3.6 - One Way 200m Buffer',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6c&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: onewayStyle,
+                onEachFeature: onewayPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+
+        {
+            key: 'Q3.6 - Prohibition of Driving 200m Buffer',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6d&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: prohibitionofdrivingStyle,
+                onEachFeature: prohibitionofdrivingPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+
+        {
+            key: 'Q3.6 - Pedestrianisation 200m Buffer',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6e&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: pedestrianisationStyle,
+                onEachFeature: pedestrianisationPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+        
+        {
+            key: 'Q3.6 - Width or Weight Restriction 200m Buffer',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6f&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: widthweightStyle,
+                onEachFeature: widthweightPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+        
+        {
+            key: 'Q3.6 - Traffic Calming 200m Buffer',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6g&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: trafficcalmingStyle,
+                onEachFeature: trafficcalmingPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+        
+        {
+            key: 'Q3.6 - Residents Parking Controls Buffered',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6h&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: residentsparkingStyle,
+                onEachFeature: residentsparkingPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+
+        {
+            key: 'Q3.6 - Minor Road Alteration Buffered',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6i&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: minorroadalterationsStyle,
+                onEachFeature: minorroadalterationsPopup
+            },
+            displayOverlay: true,
+            visibleByDefault: true
+        },
+
+        {
+            key: 'Q3.6 - Cycle Track Buffered',
+            url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6k&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
+            layerOptions: {
+                maxZoom: 20,
+                style: cycletrackStyle,
+                onEachFeature: cycletrackPopup
             },
             displayOverlay: true,
             visibleByDefault: true

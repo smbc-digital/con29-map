@@ -536,7 +536,7 @@ const newroadconsultPopup = (feature, layer) => {
 
 const newrailwayPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.5 - Proposed Rail Buffer</p>
+  const content = `<div class="item"><i class="fa fa-subway" aria-hidden="true"></i><p class="title">Q3.5 - Proposed Rail Buffer</p>
   <p></p>
   <p class="info">Scheme Type: ${feature.properties.scheme}</p>
                                            
@@ -545,7 +545,114 @@ const newrailwayPopup = (feature, layer) => {
   layer.bindPopup(content)
   }
 
-export {
+const waitingPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.6 - Waiting or Loading Restrictions 200m Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.restriction_type}</p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                               
+  </div>`
+                                                
+  layer.bindPopup(content)
+  }
+
+const onewayPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.6 - One Way Traffic 200m Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.restriction_type}</p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                               
+  </div>`
+                                                  
+  layer.bindPopup(content)
+  }
+
+const prohibitionofdrivingPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.6 - Prohibition of Driving 200m Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.restriction_type}</p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                                 
+  </div>`
+                                                    
+  layer.bindPopup(content)
+  }
+
+const pedestrianisationPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.6 - Pedestrianisation 200m Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.restriction_type}</p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                                   
+  </div>`
+                                                      
+  layer.bindPopup(content)
+  }
+
+const widthweightPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.6 - Width and Weight Restrictions 200m Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.restriction_type}</p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                                     
+  </div>`
+                                                        
+  layer.bindPopup(content)
+  }
+
+const trafficcalmingPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.6 - Traffic Calming Measures 200m Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.restriction_type}</p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                                       
+  </div>`
+                                                          
+  layer.bindPopup(content)
+  }
+
+const residentsparkingPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-car" aria-hidden="true"></i><p class="title">Q3.6 - Resident Parking Controls Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.restriction_type}</p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                                         
+  </div>`
+                                                            
+  layer.bindPopup(content)
+  }
+
+const minorroadalterationsPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.6 - Minor Road Alterations Buffer</p>
+  <p></p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                                           
+  </div>`
+                                                              
+  layer.bindPopup(content)
+  }
+
+const cycletrackPopup = (feature, layer) => {
+  
+  const content = `<div class="item"><i class="fa fa-road" aria-hidden="true"></i><p class="title">Q3.6 - Cycle Track Buffer</p>
+  <p></p>
+  <p class="info">Scheme Type: ${feature.properties.restriction_type}</p>
+  <p class="info">Short Description: ${feature.properties.description}</p>
+                                                             
+  </div>`
+                                                                
+  layer.bindPopup(content)
+  }
+
+  export {
   planningappsPopup,
   buildingregsapprovalPopup, 
   buildingcertPopup,
@@ -589,5 +696,15 @@ export {
   roadalterationsPopup,
   newroadPopup,
   newroadconsultPopup,
-  newrailwayPopup
+  newrailwayPopup,
+  waitingPopup,
+  onewayPopup,
+  prohibitionofdrivingPopup,
+  pedestrianisationPopup,
+  widthweightPopup,
+  trafficcalmingPopup,
+  residentsparkingPopup,
+  minorroadalterationsPopup,
+  //pedestriancrossingPopup,
+  cycletrackPopup
 }

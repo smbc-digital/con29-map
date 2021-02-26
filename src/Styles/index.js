@@ -364,6 +364,95 @@ const newrailwayStyle = {
     fillOpacity: 0.25,
 }
 
+const stoppingupStyle = {
+    color: '#cb181d',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#ef3b2c',
+    fillOpacity: 0.25,
+}
+
+const waitingStyle = {
+    color: '#08306b',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#08519c',
+    fillOpacity: 0.25,
+}
+
+const onewayStyle = {
+    color: '#737373',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#bdbdbd',
+    fillOpacity: 0.25,
+}
+
+const prohibitionofdrivingStyle = {
+    color: '#a1d99b',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#c7e9c0',
+    fillOpacity: 0.25,
+}
+
+const pedestrianisationStyle = {
+    color: '#feb24c',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#fed976',
+    fillOpacity: 0.25,
+}
+
+const widthweightStyle = {
+    color: '#1d91c0',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#41b6c4',
+    fillOpacity: 0.25,
+}
+
+const trafficcalmingStyle = {
+    color: '#c6dbef',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#c6dbef',
+    fillOpacity: 0.25,
+}
+
+const residentsparkingStyle = {
+    color: '#2171b5',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#2171b5',
+    fillOpacity: 0.25,
+}
+
+const minorroadalterationsStyle = {
+    color: '#525252',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#737373',
+    fillOpacity: 0.25,
+}
+
+//const pedestriancrossingStyle = {
+//    color: '#d94801',
+//    weight: 2,
+//    opacity: 1,
+//    fillColor: '#f16913',
+//    fillOpacity: 0.25,
+//}
+
+const cycletrackStyle = {
+    color: '#cb181d',
+    dashArray: '15,15,15',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#ef3b2c',
+    fillOpacity: 0.25,
+}
+
 export {
         planningappsStyle,
         buildingregsapprovalStyle, 
@@ -408,5 +497,16 @@ export {
         roadalterationsStyle,
         newroadStyle,
         newroadconsultStyle,
-        newrailwayStyle
+        newrailwayStyle,
+        stoppingupStyle,
+        waitingStyle,
+        onewayStyle,
+        prohibitionofdrivingStyle,
+        pedestrianisationStyle,
+        widthweightStyle,
+        trafficcalmingStyle,
+        residentsparkingStyle,
+        minorroadalterationsStyle,
+        //pedestriancrossingStyle
+        cycletrackStyle
     }
