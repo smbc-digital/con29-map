@@ -20,10 +20,10 @@ const planningappsPopup = (feature, layer) => {
   <p></p>
   <p class="info">Application No.: ${feature.properties.refval}</p>
   <p class="info">Address: ${feature.properties.address}</p>
-  <p class="info">App Type: ${feature.properties.apptyp}</p>
+  <p class="info">App Type: ${feature.properties.app_type}</p>
   <p class="info">Description: ${feature.properties.dscrpn}</p>
-  <p class="info">Decision: ${feature.properties.bcstat}</p>
-  <p class="info">Decision Date: ${feature.properties.date_modified}</p>
+  <p class="info">Decision: ${feature.properties.decision}</p>
+  <p class="info">Decision Date: ${feature.properties.decidd}</p>
   
   </div>`
  
@@ -36,9 +36,10 @@ const planningappsPopup = (feature, layer) => {
   <p></p>
   <p class="info">Application No.: ${feature.properties.refval}</p>
   <p class="info">Address: ${feature.properties.address}</p>
-  <p class="info">Completion Date: ${feature.properties.date_modified}</p>
+  <p class="info">Application Type: ${feature.properties.app_type}</p>
   <p class="info">Description: ${feature.properties.dscrpn}</p>
-  <p class="info">Application Type: ${feature.properties.apptyp}</p>
+  <p class="info">Completion Cert Issued: ${feature.properties.compissd}</p>
+  
   
   </div>`
  
@@ -720,6 +721,29 @@ const tpoPopup = (feature, layer) => {
   layer.bindPopup(content)
   }
 
+const cpoPopup = (feature, layer) => {
+
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.12 - Compulsory Purchase Orders</p>
+  <p></p>
+  <p class="info">Scheme: ${feature.properties.scheme_name}</p>
+  <p class="info">Description: ${feature.properties.description}</p>
+                                                                       
+  </div>`
+                                                                              
+  layer.bindPopup(content)
+  }
+
+const radonPopup = (feature, layer) => {
+
+  const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.14 Radon Gas</p>
+  <p></p>
+  <p class="info">Class: ${feature.properties.class}</p>
+                                                                         
+  </div>`
+                                                                                
+  layer.bindPopup(content)
+  }
+
 export {
   planningappsPopup,
   buildingregsapprovalPopup, 
@@ -780,5 +804,7 @@ export {
   breachconditionPopup,
   planningcontraPopup,
   othernoticePopup,
-  tpoPopup
+  tpoPopup,
+  radonPopup,
+  cpoPopup
 }

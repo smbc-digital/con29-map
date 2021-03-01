@@ -501,6 +501,22 @@ const tpoStyle = {
     fillOpacity: 0.25,
 }
 
+const radonStyle = {
+    color: '#78c679',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#addd8e',
+    fillOpacity: 0.25,
+}
+
+const cpoStyle = {
+    color: '#78c679',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#addd8e',
+    fillOpacity: 0.25,
+}
+
 export {
         planningappsStyle,
         buildingregsapprovalStyle, 
@@ -562,5 +578,7 @@ export {
         breachconditionStyle,
         planningcontraStyle,
         othernoticeStyle,
-        tpoStyle
+        tpoStyle,
+        radonStyle,
+        cpoStyle
     }
