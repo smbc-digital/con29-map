@@ -517,6 +517,14 @@ const cpoStyle = {
     fillOpacity: 0.25,
 }
 
+const enforcementnoticeStyle = {
+    color: '#78c679',
+    weight: 2,
+    opacity: 1,
+    fillColor: '#addd8e',
+    fillOpacity: 0.25,
+}
+
 export {
         planningappsStyle,
         buildingregsapprovalStyle, 
@@ -580,5 +588,6 @@ export {
         othernoticeStyle,
         tpoStyle,
         radonStyle,
-        cpoStyle
+        cpoStyle,
+        enforcementnoticeStyle
     }

@@ -744,6 +744,19 @@ const radonPopup = (feature, layer) => {
   layer.bindPopup(content)
   }
 
+  const enforcementnoticePopup = (feature, layer) => {
+
+    const content = `<div class="item"><i class="fa fa-list" aria-hidden="true"></i><p class="title">Q3.9 Enforcement Notice</p>
+    <p></p>
+    <p class="info">Ref: ${feature.properties.refval}</p>
+    <p class="info">Address: ${feature.properties.address}</p>
+    <p class="info">Description: ${feature.properties.nature}</p>
+    <p class="info">Action: ${feature.properties.action}</p>                                                                       
+    </div>`
+                                                                                  
+    layer.bindPopup(content)
+    }
+
 export {
   planningappsPopup,
   buildingregsapprovalPopup, 
@@ -806,5 +819,6 @@ export {
   othernoticePopup,
   tpoPopup,
   radonPopup,
-  cpoPopup
+  cpoPopup,
+  enforcementnoticePopup
 }
