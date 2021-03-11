@@ -22,7 +22,7 @@ const Configuration = {
             layerOptions: {
                 style: planningappsStyle,
                 onEachFeature: planningappsPopup,
-                maxZoom: 19
+                maxZoom: 17
             },
             displayOverlay: true,
             visibleByDefault: true
@@ -34,7 +34,7 @@ const Configuration = {
             layerOptions: {
                 style: buildingregsapprovalStyle,
                 onEachFeature: buildingregsapprovalPopup,
-                maxZoom: 19
+                maxZoom: 17
             },
             displayOverlay: true,
             visibleByDefault: true
@@ -46,7 +46,7 @@ const Configuration = {
             layerOptions: {
                 style: buildingcertStyle,
                 onEachFeature: buildingcertPopup,
-                maxZoom: 19
+                maxZoom: 17
             },
             displayOverlay: true,
             visibleByDefault: true
@@ -58,7 +58,7 @@ const Configuration = {
             layerOptions: {
                 style: airport_public_safety_zoneStyle,
                 onEachFeature: airport_public_safety_zonePopup,
-                maxZoom: 19
+                maxZoom: 17
             },
             displayOverlay: true,
             visibleByDefault: true
@@ -68,7 +68,7 @@ const Configuration = {
             key: 'Q1.2 - Ancient Monuments',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=heritage:ancient_monument&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: ancientmonumentStyle,
                 onEachFeature: ancientmonumentPopup
             },
@@ -80,7 +80,7 @@ const Configuration = {
             key: 'Q1.2 - Conservation Areas',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=heritage:conservation_area&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: conservationareaStyle,
                 onEachFeature: conservationareaPopup
             },
@@ -92,7 +92,7 @@ const Configuration = {
             key: 'Q1.2 - Employment Areas',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:employment_areas&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: employmentareasStyle,
                 onEachFeature: employmentareasPopup
             },
@@ -104,7 +104,7 @@ const Configuration = {
             key: 'Q1.2 - Employment Proposed',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:employment_proposed&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: employmentproposedStyle,
                 onEachFeature: employmentproposedPopup
             },
@@ -116,7 +116,7 @@ const Configuration = {
             key: 'Q1.2 - Definitive Rights of Way',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=highways:public_rights_of_way&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: prowStyle,
                 onEachFeature: prowPopup
             },
@@ -128,7 +128,7 @@ const Configuration = {
             key: 'Q1.2 - Flood Zones',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=flooding:flood_zones&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: floodzonesStyle,
                 onEachFeature: floodzonesPopup
             },
@@ -140,7 +140,7 @@ const Configuration = {
             key: 'Q1.2 - Green Belt',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning:green_belt_os&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: greenbeltStyle,
                 onEachFeature: greenbeltPopup
             },
@@ -152,7 +152,7 @@ const Configuration = {
             key: 'Q1.2 - Major Existing Development Sites in the Green Belt (MEDS)',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:greenbelt_meds&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: greenbeltmedsStyle,
                 onEachFeature: greenbeltmedsPopup
             },
@@ -164,7 +164,7 @@ const Configuration = {
             key: 'Q1.2 - General',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:general&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: generalStyle,
                 onEachFeature: generalPopup
             },
@@ -176,7 +176,7 @@ const Configuration = {
             key: 'Q1.2 - Green Chain',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:green_chain&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: greenchainStyle,
                 onEachFeature: greenchainPopup
             },
@@ -188,7 +188,7 @@ const Configuration = {
             key: 'Q1.2 - Gravel',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:gravel_aos&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: gravel_aosStyle,
                 onEachFeature: gravel_aosPopup
             },
@@ -200,7 +200,7 @@ const Configuration = {
             key: 'Q1.2 - Housing Sites',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:housing_sites&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: housingsitesStyle,
                 onEachFeature: housingsitesPopup
             },
@@ -212,7 +212,7 @@ const Configuration = {
             key: 'Q1.2 - Landscape Character Areas',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:landscape_character_area&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: landscapecharacterareaStyle,
                 onEachFeature: landscapecharacterareaPopup
             },
@@ -224,7 +224,7 @@ const Configuration = {
             key: 'Q1.2 - Local Nature Reserves',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=biota:local_nature_reserves&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: localnaturereserveStyle,
                 onEachFeature: localnaturereservePopup
             },
@@ -236,7 +236,7 @@ const Configuration = {
             key: 'Q1.2 - Local Open Space',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:local_open_space&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: localopenspaceStyle,
                 onEachFeature: localopenspacePopup
             },
@@ -248,7 +248,7 @@ const Configuration = {
             key: 'Q1.2 - Local Wildlife Sites',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:local_wildlife_sites&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: localwildlifesitesStyle,
                 onEachFeature: localwildlifesitesPopup
             },
@@ -260,7 +260,7 @@ const Configuration = {
             key: 'Q1.2 - Metrolink Corridor',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:metrolink_corridor&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: metrolinkcorridorStyle,
                 onEachFeature: metrolinkcorridorPopup
             },
@@ -272,7 +272,7 @@ const Configuration = {
             key: 'Q1.2 - M60 Gateway Sites',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:m60_gateway_sites&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: m60gatewaysitesStyle,
                 onEachFeature: m60gatewaysitesPopup
             },
@@ -284,7 +284,7 @@ const Configuration = {
             key: 'Q1.2 - Parks and Gardens of Historic Interest',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=heritage:parkgarden_of_historic_interest&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: parkgardenofhistoricinterestStyle,
                 onEachFeature: parkgardenofhistoricinterestPopup
             },
@@ -296,7 +296,7 @@ const Configuration = {
             key: 'Q1.2 - Policy Guidance Areas',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:pgas&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: pgasStyle,
                 onEachFeature: pgasPopup
             },
@@ -308,7 +308,7 @@ const Configuration = {
             key: 'Q1.2 - Predominantly Residential Area',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:predominantly_residential&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: predominantlyresidentialStyle,
                 onEachFeature: predominantlyresidentialPopup
             },
@@ -320,7 +320,7 @@ const Configuration = {
             key: 'Q1.2 - Relief Road Corridor',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:relief_road_corridor&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: reliefroadcorridorStyle,
                 onEachFeature: reliefroadcorridorPopup
             },
@@ -332,7 +332,7 @@ const Configuration = {
             key: 'Q1.2 - Sand Area of Search',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:sand_aos&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: sandaosStyle,
                 onEachFeature: sandaosPopup
             },
@@ -344,7 +344,7 @@ const Configuration = {
             key: 'Q1.2 - Sandstone/Gritstone Area of Search',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:sandstone_gritstone&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: sandgritaosStyle,
                 onEachFeature: sandgritaosPopup
             },
@@ -356,7 +356,7 @@ const Configuration = {
             key: 'Q1.2 - Shop Frontages',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:shop_frontages&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: shopfrontagesStyle,
                 onEachFeature: shopfrontagesPopup
             },
@@ -368,7 +368,7 @@ const Configuration = {
             key: 'Q1.2 - Shopping Areas - Town Centre',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:shopping_tc&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: shoppingtcStyle,
                 onEachFeature: shoppingtcPopup
             },
@@ -380,7 +380,7 @@ const Configuration = {
             key: 'Q1.2 - Shopping Areas',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:shopping_areas&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: shoppingareasStyle,
                 onEachFeature: shoppingareasPopup
             },
@@ -392,7 +392,7 @@ const Configuration = {
             key: 'Q1.2 - Sites of Biological Importance',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=biota:sbi&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: sbiStyle,
                 onEachFeature: sbiPopup
             },
@@ -404,7 +404,7 @@ const Configuration = {
             key: 'Q1.2 - Sites of Special Scientific Importance',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=biota:sssi&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: sssiStyle,
                 onEachFeature: sssiPopup
             },
@@ -416,7 +416,7 @@ const Configuration = {
             key: 'Q1.2 - Strategic Open Space',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:strategic_open_space&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: strategicopenspaceStyle,
                 onEachFeature: strategicopenspacePopup
             },
@@ -428,7 +428,7 @@ const Configuration = {
             key: 'Q1.2 - Strategic Recreation Routes',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:strategic_recreation_routes&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: strategicrecreationroutesStyle,
                 onEachFeature: strategicrecreationroutesPopup
             },
@@ -440,7 +440,7 @@ const Configuration = {
             key: 'Q1.2 - Town Centre Areas',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=planning_udp:town_centre_areas&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: towncentreareasStyle,
                 onEachFeature: towncentreareasPopup
             },
@@ -454,7 +454,7 @@ const Configuration = {
             layerOptions: {
                 style: adopted_highwaysStyle,
                 onEachFeature: adopted_highwaysPopup,
-                maxZoom: 19
+                maxZoom: 17
             },
             displayOverlay: true,
             visibleByDefault: true
@@ -466,7 +466,7 @@ const Configuration = {
             layerOptions: {
                 style: section38Style,
                 onEachFeature: section38Popup,
-                maxZoom: 19
+                maxZoom: 17
             },
             displayOverlay: true,
             visibleByDefault: true
@@ -478,7 +478,7 @@ const Configuration = {
             layerOptions: {
                 style: privatestreetworksStyle,
                 onEachFeature: privatestreetworksPopup,
-                maxZoom: 19
+                maxZoom: 17
             },
             displayOverlay: true,
             visibleByDefault: true
@@ -488,7 +488,7 @@ const Configuration = {
             key: 'Q2.2 - Definitive Rights of Way',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=highways:public_rights_of_way&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: prowStyle,
                 onEachFeature: prowPopup
             },
@@ -500,7 +500,7 @@ const Configuration = {
             key: 'Q3.4 - Trunk Road 200m Buffer',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_4a&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: trunk200Style,
                 onEachFeature: trunk200Popup
             },
@@ -512,7 +512,7 @@ const Configuration = {
             key: 'Q3.4 - Road Alterations',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_4b&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: roadalterationsStyle,
                 onEachFeature: roadalterationsPopup
             },
@@ -524,7 +524,7 @@ const Configuration = {
             key: 'Q3.4 - New Road Construction',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_4d&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: newroadStyle,
                 onEachFeature: newroadPopup
             },
@@ -536,7 +536,7 @@ const Configuration = {
             key: 'Q3.4 - Proposed New Road Consultation',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_4e&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: newroadconsultStyle,
                 onEachFeature: newroadconsultPopup
             },
@@ -548,7 +548,7 @@ const Configuration = {
             key: 'Q3.5 - Proposed Railway Scheme Buffered',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_5&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: newrailwayStyle,
                 onEachFeature: newrailwayPopup
             },
@@ -560,7 +560,7 @@ const Configuration = {
             key: 'Q3.6 - Waiting or Loading Restrictions 200m Buffer',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6b&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: waitingStyle,
                 onEachFeature: waitingPopup
             },
@@ -572,7 +572,7 @@ const Configuration = {
             key: 'Q3.6 - One Way 200m Buffer',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6c&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: onewayStyle,
                 onEachFeature: onewayPopup
             },
@@ -584,7 +584,7 @@ const Configuration = {
             key: 'Q3.6 - Prohibition of Driving 200m Buffer',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6d&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: prohibitionofdrivingStyle,
                 onEachFeature: prohibitionofdrivingPopup
             },
@@ -596,7 +596,7 @@ const Configuration = {
             key: 'Q3.6 - Pedestrianisation 200m Buffer',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6e&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: pedestrianisationStyle,
                 onEachFeature: pedestrianisationPopup
             },
@@ -608,7 +608,7 @@ const Configuration = {
             key: 'Q3.6 - Width or Weight Restriction 200m Buffer',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6f&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: widthweightStyle,
                 onEachFeature: widthweightPopup
             },
@@ -620,7 +620,7 @@ const Configuration = {
             key: 'Q3.6 - Traffic Calming 200m Buffer',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6g&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: trafficcalmingStyle,
                 onEachFeature: trafficcalmingPopup
             },
@@ -632,7 +632,7 @@ const Configuration = {
             key: 'Q3.6 - Residents Parking Controls Buffered',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6h&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: residentsparkingStyle,
                 onEachFeature: residentsparkingPopup
             },
@@ -644,7 +644,7 @@ const Configuration = {
             key: 'Q3.6 - Minor Road Alteration Buffered',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6i&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: minorroadalterationsStyle,
                 onEachFeature: minorroadalterationsPopup
             },
@@ -656,7 +656,7 @@ const Configuration = {
             key: 'Q3.6 - Cycle Track Buffered',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_6k&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: cycletrackStyle,
                 onEachFeature: cycletrackPopup
             },
@@ -668,7 +668,7 @@ const Configuration = {
           key: 'Q3.9 - Enforcement Notice Buffered',
           url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_9a&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
           layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: enforcementnoticeStyle,
                 onEachFeature: enforcementnoticePopup
         },
@@ -680,7 +680,7 @@ const Configuration = {
             key: 'Q3.9 - Stop Notice Buffered',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_9b&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: stopnoticeStyle,
                 onEachFeature: stopnoticePopup
             },
@@ -692,7 +692,7 @@ const Configuration = {
             key: 'Q3.9 - Listed Building Enforcement Notice',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_9c&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: listbuildingenfStyle,
                 onEachFeature: listbuildingenfPopup
             },
@@ -704,7 +704,7 @@ const Configuration = {
             key: 'Q3.9 - Breach of Condition Notice',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_9d&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: breachconditionStyle,
                 onEachFeature: breachconditionPopup
             },
@@ -716,7 +716,7 @@ const Configuration = {
             key: 'Q3.9 - Planning Contravention Notice',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_9e&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: planningcontraStyle,
                 onEachFeature: planningcontraPopup
             },
@@ -728,7 +728,7 @@ const Configuration = {
             key: 'Q3.9 - Other Notice',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_9f&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: othernoticeStyle,
                 onEachFeature: othernoticePopup
             },
@@ -740,7 +740,7 @@ const Configuration = {
             key: 'Q3.9 - Proposed Tree Preservation Orders',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_9m&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: tpoStyle,
                 onEachFeature: tpoPopup
             },
@@ -752,7 +752,7 @@ const Configuration = {
             key: 'Q3.12 - Compulsory Purchase Order',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_12&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: cpoStyle,
                 onEachFeature: cpoPopup
             },
@@ -764,7 +764,7 @@ const Configuration = {
             key: 'Q3.14 - Radon Gas',
             url: 'https://spatial.stockport.gov.uk/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=con29:3_14&outputFormat=application/json&bbox={0},EPSG:4326&srsName=EPSG:4326',
             layerOptions: {
-                maxZoom: 19,
+                maxZoom: 17,
                 style: radonStyle,
                 onEachFeature: radonPopup
             },
