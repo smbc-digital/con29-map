@@ -611,12 +611,10 @@ const section38Popup = (feature, layer) => {
   const content = `<div class="smbc-map__item">
   <div class="smbc-map__item__header__block">
     <i class="fa fa-list smbc-map__item__header__block__icon" aria-hidden="true"></i>
-    <span class="smbc-map__item__header__block__title">Q2.1 - Section 38 Agreements</span>
+    <span class="smbc-map__item__header__block__title">Section 38 Agreements</span>
   </div>
   <div class="smbc-map__item__body">
   <p>Description: ${feature.properties.description}</p>
-  <p>Ref: ${feature.tlc_ref}</p>
-  <p>Registered Date: ${feature.properties.date_registered}</p>
   </div>
 </div>`
   
@@ -672,6 +670,21 @@ const roadalterationsPopup = (feature, layer) => {
                                       
   layer.bindPopup(content)
   }
+
+  const threefourPopup = (feature, layer) => {
+  
+    const content = `<div class="smbc-map__item">
+    <div class="smbc-map__item__header__block">
+      <i class="fa fa-road smbc-map__item__header__block__icon" aria-hidden="true"></i>
+      <span class="smbc-map__item__header__block__title">Q3.4 - Road Alterations</span>
+    </div>
+    <div class="smbc-map__item__body">
+    <p>Description: ${feature.properties.description}</p>
+    </div>
+  </div>`
+                                        
+    layer.bindPopup(content)
+    }
 
 const newroadPopup = (feature, layer) => {
   
@@ -1067,5 +1080,6 @@ export {
   tpoPopup,
   radonPopup,
   cpoPopup,
-  enforcementnoticePopup
+  enforcementnoticePopup,
+  threefourPopup
 }
